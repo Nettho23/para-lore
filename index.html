@@ -8,9 +8,9 @@
 <script>document.documentElement.className='js';</script>
 <style>
   :root{
-    --papel:#f7f9fc; --papel2:#e9eef6;
-    --tinta:#0f1b2e; --gris:#7d8ba0; --linea:#d5dfec;
-    --rosa:#3d6ea8; --rosa-cl:#c9dcf2;
+    --papel:#0f2a44; --papel2:#17395c;
+    --tinta:#eef4fb; --gris:#8faac9; --linea:#2f5a86;
+    --rosa:#7fb2e8; --rosa-cl:#bcd8f5;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -73,7 +73,7 @@
     font-size:clamp(1.8rem,5.6vw,3rem);line-height:1.35;letter-spacing:-.01em;
   }
   .frase em{font-style:italic;color:var(--rosa)}
-  .txt{color:#22334d;font-size:1.04rem;line-height:2.05}
+  .txt{color:#d3e2f2;font-size:1.04rem;line-height:2.05}
   .txt+.txt{margin-top:22px}
   .txt strong{font-weight:500;color:var(--tinta)}
   .fina{
@@ -115,7 +115,7 @@
   .fl{
     position:absolute;top:-13px;left:50%;transform:translateX(-50%);
     width:5px;height:5px;border-radius:50%;background:var(--rosa);
-    box-shadow:0 0 14px 3px rgba(61,110,168,.55);
+    box-shadow:0 0 14px 3px rgba(127,178,232,.6);
     animation:late 1.9s ease-in-out infinite;transition:opacity .5s,transform .5s;
   }
   @keyframes late{0%,100%{transform:translateX(-50%) scale(1);opacity:.95}50%{transform:translateX(-50%) scale(1.35);opacity:.6}}
@@ -371,7 +371,7 @@ function bt(){document.getElementById('bm').textContent=son?'Pausar':'Música';}
 
 /* ===== PÉTALOS ===== */
 function petalos(k){
-  const t=['#3d6ea8','#7aa7d9','#c9dcf2','#e9eef6'];
+  const t=['#7fb2e8','#bcd8f5','#4d80bd','#eef4fb'];
   for(let i=0;i<k;i++){
     const e=document.createElement('div'); e.className='pet';
     e.style.left=Math.random()*100+'vw';
